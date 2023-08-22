@@ -1,0 +1,22 @@
+.hero-banner {
+  height: 300px;
+  display: flex;
+  background-image: url("../../images/Starguardian.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+    color: white;
+    font-size: 20px;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+

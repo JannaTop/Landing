@@ -1,0 +1,43 @@
+
+.card img.big{
+  width: 600px;
+  z-index: 3;
+  position: absolute;
+  top: -15%;
+  left: -60%;
+  z-index: 44;
+  visibility: hidden;
+}
+.card img {
+  width: 150px;
+}
+.card:hover, .card:hover img.big {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  visibility: visible;
+}
+
+
+.card {
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230,230,230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+  margin: 50px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.grid grid-cols-2 gap-4 sm:flex w-full{
+  visibility: hidden;
+  display: none !important;
+}
