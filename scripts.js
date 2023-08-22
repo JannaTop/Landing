@@ -1,12 +1,12 @@
-//wait for page to load before running script 2 seconds
 setTimeout(function() {
-  var iframe = document.getElementById('targetframe');
-
-  var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-
-  innerDoc.querySelector('.grid .grid-cols-2 .gap-4 .sm:flex .w-full').style.display = 'none';
+  console.log(window.innerWidth < 768);
+  if (window.innerWidth < 768) {
+    var cardsContainer = document.getElementsByClassName('cards');
+    for (var i = 0; i < cardsContainer.length; i++) {
+      cardsContainer[i].style.flexDirection = 'column';
+      cardsContainer[i].style.alignItems = 'center';
+      cardsContainer[i].style.justifyContent = 'center';
+    }
+  }
   
-  
-  console.log(innerDoc);
-  console.log(iframe);
-}, 2000);
+}, 500);
